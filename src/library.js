@@ -18,6 +18,22 @@ module.exports = {
       result[checkword] = count;
     }
     return result;
-  }
+  },
+
+  reverseString: function (str) {
+    if (str.length === 0){
+      return null;
+    }
+    
+    var result = "";
+    for (var i = str.length - 1; i >= 0; i--){
+      result += str[i];
+
+      if (str === result){
+        return true;
+      }
+    }
+    return result;
+   }
 
 }

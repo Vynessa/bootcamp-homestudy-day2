@@ -1,5 +1,7 @@
 'use strict'
 
+var reverseString = require('../src/library.js').reverseString;
+
 describe("Produce the reverse order of a word: ", function() {
   describe("Case for en empty string", function() {
 
